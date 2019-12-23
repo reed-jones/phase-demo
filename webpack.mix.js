@@ -1,5 +1,8 @@
 const mix = require('laravel-mix');
 
+const { PhaseMixPlugin } = require('@j0nz/phase')
+PhaseMixPlugin(mix)
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -12,4 +15,4 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    .phaseRoutes();

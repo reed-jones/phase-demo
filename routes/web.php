@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::phase('/', 'AppController@HomePage');
+Route::phase('/about', 'AppController@AboutPage');

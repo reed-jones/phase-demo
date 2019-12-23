@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b32b8946fe5cb9c80676727568a4c0c",
+    "content-hash": "b50123dc3bac4d8f7a906e7a262ea0ed",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1476,6 +1476,52 @@
                 "uuid"
             ],
             "time": "2019-12-17T08:18:51+00:00"
+        },
+        {
+            "name": "reed-jones/phase",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reed-jones/phase-laravel.git",
+                "reference": "15bd96189df2a3b9974b877a1cec1ba4161c7534"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reed-jones/phase-laravel/zipball/15bd96189df2a3b9974b877a1cec1ba4161c7534",
+                "reference": "15bd96189df2a3b9974b877a1cec1ba4161c7534",
+                "shasum": ""
+            },
+            "require": {
+                "vuexcellent/laravel": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ReedJones\\Phase\\PhaseServiceProvider"
+                    ],
+                    "aliases": {
+                        "Phase": "ReedJones\\Phase\\Facades\\Phase"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ReedJones\\Phase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Reed Jones",
+                    "email": "reedjones@reedjones.com"
+                }
+            ],
+            "description": "Transparent Vue <-> Laravel Integration",
+            "time": "2019-12-22T15:48:10+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3011,6 +3057,53 @@
                 "php"
             ],
             "time": "2019-12-19T00:46:43+00:00"
+        },
+        {
+            "name": "vuexcellent/laravel",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reed-jones/vuexcellent-laravel.git",
+                "reference": "19a630f31935422901ec46959ac1fdd6bb43e053"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reed-jones/vuexcellent-laravel/zipball/19a630f31935422901ec46959ac1fdd6bb43e053",
+                "reference": "19a630f31935422901ec46959ac1fdd6bb43e053",
+                "shasum": ""
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.4",
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ReedJones\\Vuexcellent\\VuexcellentServiceProvider"
+                    ],
+                    "aliases": {
+                        "Vuex": "ReedJones\\Vuexcellent\\Facades\\Vuex"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ReedJones\\Vuexcellent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Reed Jones",
+                    "email": "reedjones@reedjones.com"
+                }
+            ],
+            "description": "Magic Data Loading. Laravel <-> Vuex Syncing",
+            "time": "2019-12-19T00:46:12+00:00"
         }
     ],
     "packages-dev": [
@@ -4810,7 +4903,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "reed-jones/phase": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -17,5 +17,12 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0"
+    },
+    "dependencies": {
+        "@j0nz/phase": "^1.0.0",
+        "@vuexcellent/vuex": "^2.0.0",
+        "vue": "^2.6.11",
+        "vue-router": "^3.1.3",
+        "vuex": "^3.1.2"
     }
 }
